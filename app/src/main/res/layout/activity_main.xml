@@ -16,13 +16,61 @@
         android:minHeight="2000dp">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_level"
+            android:background="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2_level"
+            android:background="@android:color/holo_blue_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_level"
+            android:background="@android:color/holo_green_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/second"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_level"
+            android:background="@android:color/holo_red_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/third"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_level"
+            android:background="@android:color/holo_purple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fourth"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/olehZaiets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Oleh Zaiets"
+            android:text="@string/oleh_zaiets"
+            android:background="@android:color/holo_orange_dark"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toEndOf="@id/liliaZaets"
+            app:layout_constraintEnd_toStartOf="@id/oleksandZaets"/>
 
 
 
@@ -32,18 +80,20 @@
             android:id="@+id/liliaZaets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lilia Zaets"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/oleksandZaets"
+            android:text="@string/lilia_zaets"
+            android:background="@android:color/holo_blue_dark"
+            app:layout_constraintStart_toEndOf="@id/svetaLopatnichenko"
+            app:layout_constraintEnd_toStartOf="@id/oleksandrLopatnichenko"
             app:layout_constraintTop_toBottomOf="@id/olehZaiets"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/oleksandZaets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Oleksandr Zaets"
-            app:layout_constraintStart_toEndOf="@id/liliaZaets"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/oleksandr_zaets"
+            android:background="@android:color/holo_blue_dark"
+            app:layout_constraintStart_toEndOf="@id/pavelZaets"
+            app:layout_constraintEnd_toStartOf="@+id/tanyaZaets"
             app:layout_constraintTop_toBottomOf="@id/olehZaiets"/>
 
 
@@ -54,36 +104,40 @@
             android:id="@+id/svetaLopatnichenko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sveta Lopatnichenko"
-            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/sveta_lopatnichenko"
+            android:background="@android:color/holo_green_dark"
+            app:layout_constraintStart_toEndOf="@id/alinaSabri"
             app:layout_constraintTop_toBottomOf="@id/liliaZaets"
-            app:layout_constraintEnd_toStartOf="@id/oleksandrLopatnichenko"/>
+            app:layout_constraintEnd_toStartOf="@id/konstantinSabri"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/oleksandrLopatnichenko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Oleksandr Lopatnichenko"
-            app:layout_constraintStart_toEndOf="@id/svetaLopatnichenko"
-            app:layout_constraintEnd_toStartOf="@id/pavelZaets"
+            android:text="@string/oleksandr_lopatnichenko"
+            android:background="@android:color/holo_green_dark"
+            app:layout_constraintStart_toEndOf="@id/vladLopatnichenko"
+            app:layout_constraintEnd_toStartOf="@id/olyaLopatnichenko"
             app:layout_constraintTop_toBottomOf="@id/liliaZaets"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/pavelZaets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pavel Zaets"
-            app:layout_constraintStart_toEndOf="@id/oleksandrLopatnichenko"
+            android:text="@string/pavel_zaets"
+            android:background="@android:color/holo_green_dark"
+            app:layout_constraintStart_toEndOf="@id/petroZaets"
             app:layout_constraintTop_toBottomOf="@id/oleksandZaets"
-            app:layout_constraintEnd_toStartOf="@id/tanyaZaets"/>
+            app:layout_constraintEnd_toStartOf="@id/mariaZaets"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tanyaZaets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tanya Zaets"
-            app:layout_constraintStart_toEndOf="@id/pavelZaets"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/tanya_zaets"
+            android:background="@android:color/holo_green_dark"
+            app:layout_constraintStart_toEndOf="@id/olgaMatvienko"
+            app:layout_constraintEnd_toStartOf="@id/eiganMatvienko"
             app:layout_constraintTop_toBottomOf="@id/oleksandZaets"/>
 
 
@@ -95,7 +149,8 @@
             android:id="@+id/alinaSabri"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="alina Sabri"
+            android:text="@string/alina_sabri"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintTop_toBottomOf="@id/svetaLopatnichenko"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/konstantinSabri"/>
@@ -104,7 +159,8 @@
             android:id="@+id/konstantinSabri"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Konstantin Sabri"
+            android:text="@string/konstantin_sabri"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintStart_toEndOf="@id/alinaSabri"
             app:layout_constraintEnd_toStartOf="@id/vladLopatnichenko"
             app:layout_constraintTop_toBottomOf="@id/svetaLopatnichenko"/>
@@ -113,7 +169,8 @@
             android:id="@+id/vladLopatnichenko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vlad Lopatnichenko"
+            android:text="@string/vlad_lopatnichenko"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintStart_toEndOf="@id/konstantinSabri"
             app:layout_constraintEnd_toStartOf="@id/olyaLopatnichenko"
             app:layout_constraintTop_toBottomOf="@id/oleksandrLopatnichenko"/>
@@ -122,7 +179,8 @@
             android:id="@+id/olyaLopatnichenko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Olya Lopatnichenko"
+            android:text="@string/olya_lopatnichenko"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintEnd_toStartOf="@id/petroZaets"
             app:layout_constraintStart_toEndOf="@id/vladLopatnichenko"
             app:layout_constraintTop_toBottomOf="@id/oleksandrLopatnichenko"/>
@@ -131,7 +189,8 @@
             android:id="@+id/petroZaets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Petro Zaets"
+            android:text="@string/petro_zaets"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintEnd_toStartOf="@id/mariaZaets"
             app:layout_constraintStart_toEndOf="@id/olyaLopatnichenko"
             app:layout_constraintTop_toBottomOf="@id/pavelZaets"/>
@@ -140,7 +199,8 @@
             android:id="@+id/mariaZaets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Maria Zaets"
+            android:text="@string/maria_zaets"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintEnd_toStartOf="@id/olgaMatvienko"
             app:layout_constraintStart_toEndOf="@id/petroZaets"
             app:layout_constraintTop_toBottomOf="@id/pavelZaets"/>
@@ -149,7 +209,8 @@
             android:id="@+id/olgaMatvienko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Olga Matvienko"
+            android:text="@string/olga_matvienko"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintEnd_toStartOf="@id/eiganMatvienko"
             app:layout_constraintStart_toEndOf="@id/mariaZaets"
             app:layout_constraintTop_toBottomOf="@id/tanyaZaets"/>
@@ -158,10 +219,33 @@
             android:id="@+id/eiganMatvienko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Eigan Matvienko"
+            android:text="@string/eigan_matvienko"
+            android:background="@android:color/holo_red_dark"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/olgaMatvienko"
             app:layout_constraintTop_toBottomOf="@id/tanyaZaets"/>
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/daemonSabri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daemon_sabri"
+            android:background="@android:color/holo_purple"
+            app:layout_constraintTop_toBottomOf="@id/konstantinSabri"
+            app:layout_constraintEnd_toStartOf="@id/konstantinSabri"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/alisannaSabri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alisanna_sabri"
+            android:background="@android:color/holo_purple"
+            app:layout_constraintTop_toBottomOf="@id/konstantinSabri"
+            app:layout_constraintStart_toEndOf="@id/konstantinSabri"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

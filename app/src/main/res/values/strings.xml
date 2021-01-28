@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Zaets Constraint</string>
+    <string name="_1_level">1 level</string>
+    <string name="_2_level">2 level</string>
+    <string name="_3_level">3 level</string>
+    <string name="_4_level">4 level</string>
+    <string name="_5_level">5 level</string>
+    <string name="oleh_zaiets">Oleh Zaiets</string>
+    <string name="lilia_zaets">Lilia Zaets</string>
+    <string name="oleksandr_zaets">Oleksandr Zaets</string>
+    <string name="sveta_lopatnichenko">Sveta Lopatnichenko</string>
+    <string name="oleksandr_lopatnichenko">Oleksandr Lopatnichenko</string>
+    <string name="pavel_zaets">Pavel Zaets</string>
+    <string name="tanya_zaets">Tanya Zaets</string>
+    <string name="alina_sabri">alina Sabri</string>
+    <string name="konstantin_sabri">Konstantin Sabri</string>
+    <string name="vlad_lopatnichenko">Vlad Lopatnichenko</string>
+    <string name="olya_lopatnichenko">Olya Lopatnichenko</string>
+    <string name="petro_zaets">Petro Zaets</string>
+    <string name="maria_zaets">Maria Zaets</string>
+    <string name="olga_matvienko">Olga Matvienko</string>
+    <string name="eigan_matvienko">Eigan Matvienko</string>
+    <string name="daemon_sabri">Daemon Sabri</string>
+    <string name="alisanna_sabri">Alisanna Sabri</string>
 </resources>
